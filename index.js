@@ -22,6 +22,7 @@ myCar.drive();
 
 
 // This shows inheritance using Object.create()
+// This takes a little more memory than the above method but uses less code
 
 var vehicle = {};
 vehicle.drive = function() {

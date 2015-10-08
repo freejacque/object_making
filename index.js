@@ -24,6 +24,12 @@ myCar.drive();
 // This shows inheritance using Object.create()
 
 var vehicle = {};
-vehicle.drive = function () {
+vehicle.drive = function() {
   console.log('vrooom...');
 };
+
+var car = Object.create(vehicle);
+car.honk = function() {
+  console.log('honk honk');
+};
+

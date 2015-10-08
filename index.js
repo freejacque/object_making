@@ -33,3 +33,7 @@ car.honk = function() {
   console.log('honk honk');
 };
 
+var myCar = Object.create(car);
+
+myCar.honk();
+myCar.drive();

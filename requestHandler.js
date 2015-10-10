@@ -8,6 +8,10 @@ var stream = fs.createReadStream('/file/path');
 
 var content = '';
 
+stream.on('error', function(err) {
+  console.log('Sad panda: ' + err);
+});
+
 // a callback is attached to data events
 stream.on('data', function(data) {
   console.log('Received data: ' + data);

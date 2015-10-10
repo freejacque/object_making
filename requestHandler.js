@@ -3,6 +3,7 @@
 var fs = require('fs');
 
 // a ReadStream object is created
+// this object is called an Event Emitter
 var stream = fs.createReadStream('/file/path');
 
 // a callback is attached to data events

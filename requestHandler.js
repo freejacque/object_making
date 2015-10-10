@@ -8,6 +8,7 @@ var stream = fs.createReadStream('/file/path');
 
 var content = '';
 
+// callback for error event
 stream.on('error', function(err) {
   console.log('Sad panda: ' + err);
 });

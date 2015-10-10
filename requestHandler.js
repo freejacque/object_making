@@ -6,6 +6,8 @@ var fs = require('fs');
 // this object is called an Event Emitter
 var stream = fs.createReadStream('/file/path');
 
+var content = '';
+
 // a callback is attached to data events
 stream.on('data', function(data) {
   console.log('Received data: ' + data);

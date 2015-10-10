@@ -13,6 +13,11 @@ stream.on('error', function(err) {
   console.log('Sad panda: ' + err);
 });
 
+
+stream.once('data', function(data) {
+  console.log('I have received the first chunk of data');
+});
+
 // a callback is attached to data events
 stream.on('data', function(data) {
   console.log('Received data: ' + data);

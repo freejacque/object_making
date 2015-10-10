@@ -14,4 +14,6 @@ stream.on('data', function(data) {
 //  a callback is attached to the end event
 stream.on('end', function() {
   console.log('End of file has been reached');
+  // this is the thing to be done after all the file data is loaded
+  console.log('File content has been retrieved: ' + content);
 });

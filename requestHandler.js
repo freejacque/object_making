@@ -8,6 +8,10 @@ var stream = fs.createReadStream('/file/path');
 
 var content = '';
 
+var callback = function(data) {
+  console.log('I have received a chunk of data: ' + data);
+}
+
 // callback for error event
 stream.on('error', function(err) {
   console.log('Sad panda: ' + err);
@@ -17,6 +21,7 @@ stream.on('error', function(err) {
 stream.once('data', function(data) {
   console.log('I have received the first chunk of data');
 });
+
 
 // a callback is attached to data events
 stream.on('data', function(data) {

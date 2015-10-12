@@ -12,6 +12,7 @@ var callback = function(data) {
   console.log('I have received a chunk of data: ' + data);
 }
 
+// how to use stream.on with a named function
 stream.on('data', callback);
 
 // callback for error event

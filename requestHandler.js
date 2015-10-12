@@ -20,11 +20,10 @@ stream.on('error', function(err) {
   console.log('Sad panda: ' + err);
 });
 
-
+// this event only occurs the first time the data is sent
 stream.once('data', function(data) {
   console.log('I have received the first chunk of data');
 });
-
 
 // a callback is attached to data events
 stream.on('data', function(data) {

@@ -30,6 +30,7 @@ stream.on('data', function(data) {
   console.log('Received data: ' + data);
 });
 
+//  manually remove the function callback on data events
 stream.removeListener('data', callback);
 
 //  a callback is attached to the end event

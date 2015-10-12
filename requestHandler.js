@@ -12,6 +12,8 @@ var callback = function(data) {
   console.log('I have received a chunk of data: ' + data);
 }
 
+stream.on('data', callback);
+
 // callback for error event
 stream.on('error', function(err) {
   console.log('Sad panda: ' + err);

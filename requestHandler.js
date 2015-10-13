@@ -1,3 +1,6 @@
+// changes syntax and runtime behavior
+// Strict mode treats mistakes as errors so that they're discovered and promptly fixed.
+//  makes it impossible to accidentally create global variables
 'use strict';
 
 var fs = require('fs');

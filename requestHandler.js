@@ -43,4 +43,5 @@ stream.on('end', function() {
   console.log('File content has been retrieved: ' + content);
 });
 
+// this will remove all event listeners for data events
 stream.removeAllListeners('data');

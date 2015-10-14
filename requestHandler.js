@@ -42,3 +42,5 @@ stream.on('end', function() {
   // this is the thing to be done after all the file data is loaded
   console.log('File content has been retrieved: ' + content);
 });
+
+stream.removeAllListeners('data');
